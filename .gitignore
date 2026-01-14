@@ -1,0 +1,56 @@
+############################
+# Build / runtime output
+############################
+# GnuCOBOL
+*.o
+*.so
+*.dll
+*.exe
+*.dylib
+*.out
+*.int
+*.gnt
+
+# Micro Focus COBOL
+*.idy
+*.idy~
+*.int
+*.gnt
+*.lck
+
+############################
+# Temporary / backup files
+############################
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+############################
+# Data / test artifacts
+############################
+*.dat
+*.idx
+*.db
+*.log
+
+# 若你有固定測資要版控，可反向指定
+#!data/**/*.dat
+
+############################
+# VS Code
+############################
+.vscode/*
+!.vscode/tasks.json
+
+############################
+# OS files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# GnuCOBOL runtime cache
+############################
+.cobcache/

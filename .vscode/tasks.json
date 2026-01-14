@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile: cobc (single file)",
+      "type": "shell",
+      "command": "cobc",
+      "args": [
+        "-m",
+        "-I${workspaceFolder}/copybook",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
